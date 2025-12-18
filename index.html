@@ -3,98 +3,330 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minecraft - Вікіпедія</title>
+    <title>Minecraft | Українська спільнота</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <img src="https://i.postimg.cc/FRRDNJnb/unnamed-2.png" alt="Логотип Minecraft">
-            <div class="header-border"></div>
-            <nav>
-                <ul>
-                    <li><a href="#інформація">Інформація</a></li>
-                    <li><a href="#версії">Версії</a></li>
-                    <li><a href="#контакти">Контакти</a></li>
-                </ul>
-            </nav>
-            <div class="header-border"></div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-cube"></i>
+                <span>MinecraftUA</span>
+            </a>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link active"><i class="fas fa-home"></i> Головна</a>
+                <a href="#about" class="nav-link"><i class="fas fa-info-circle"></i> Про гру</a>
+                <a href="#versions" class="nav-link"><i class="fas fa-history"></i> Версії</a>
+                <a href="#gallery" class="nav-link"><i class="fas fa-images"></i> Галерея</a>
+                <a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Контакти</a>
+            </div>
+            <button class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
-    </header>
+    </nav>
 
-    <main>
-        <section id="інформація" class="info-section">
-            <div class="content-box">
-                <h2>Про Minecraft</h2>
-                <p>Minecraft (від англ. mine - "шахта; добувати" + craft - "ремесло; створювати") - комп'ютерна інді-гра в жанрі пісочниці, створена шведським програмістом Маркусом Перссоном і випущена його студією Mojang AB. У 2009 році Персон опублікував початкову версію гри; Наприкінці 2011 року було випущено стабільну версію для комп'ютерів Windows, Linux і macOS з поширенням через офіційний сайт.</p>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="hero-gradient">Minecraft</span>
+                <br>Будуй. Досліджуй. Виживай.
+            </h1>
+            <p class="hero-subtitle">Найпопулярніша пісочниця в світі з мільярдами гравців</p>
+            <div class="hero-buttons">
+                <a href="https://www.minecraft.net" target="_blank" class="btn btn-primary">
+                    <i class="fas fa-download"></i> Грати зараз
+                </a>
+                <a href="#about" class="btn btn-secondary">
+                    <i class="fas fa-play-circle"></i> Дізнатися більше
+                </a>
+            </div>
+        </div>
+        <div class="hero-background">
+            <div class="pixel-grid"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Про Minecraft</h2>
+                <p class="section-subtitle">Історія та особливості легендарної гри</p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-user-cog"></i>
+                    </div>
+                    <h3>Створення</h3>
+                    <p>Створена шведським програмістом Маркусом Перссоном у 2009 році. Гра поєднує елементи виживання, будівництва та дослідження.</p>
+                </div>
                 
-                <p>У наступні роки Minecraft була портована на мобільні пристрої під керуванням Android, iOS та Windows Phone; на ігрові приставки PlayStation 3, PlayStation 4, PlayStation Vita, Xbox 360, Xbox One, New Nintendo 3DS, Nintendo Switch та Wii U; та інші платформи. У 2014 році корпорація Microsoft придбала права на Minecraft разом із студією Mojang AB за 2,5 мільярда доларів. У 2017 році було випущено мультиплатформну версію гри, що об'єднала різні версії для різних пристроїв.</p>
-            </div>
-
-            <div class="content-box">
-                <h3>Подальший розвиток</h3>
-                <p>Компанія Microsoft купила права на Minecraft та її студію-розробника Mojang за $2,5 млрд у вересні 2014 року та Маркус Перссон з деякими іншими розробниками пішов із компанії. На честь свого 11-річчя Mojang оголосила про повний ребрендінг і перейменувала студію на Mojang Studios.</p>
-            </div>
-
-            <div class="content-box gallery">
-                <h3>Галерея</h3>
-                <div class="image-container">
-                    <img src="https://focus.ua/static/storage/thumbs/1200x630/b/42/c4dd6fe7-c31d2c43aadcbd194ec7df2f7981742b.jpg?v=8471_1" alt="Minecraft світ">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH3iQcKEZ4pMBqonGuO6hfW4hQgfKgPLLA_g&usqp=CAU" alt="Персонажі Minecraft">
-                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoGBxQUExYUFBQXFxYYGRkYGRkXGRogIRgdIBgZGCAZHRgcHyoiHBwnHSIZIzQjJysuMTExHCE2OzYwOiowMS4BCwsLDw4PHRERHS4oIic0MTgyNTEyMDgwMDAyMDEwMDgyMDIwMDAwODAuMDgwODIzMDAwMDgwMDAwMjAwMDAwMP/AABEIAKgBLAMBIgACEQEDEQH/xAAbAAACAgMBAAAAAAAAAAAAAAAEBQMGAAECB//EAEcQAAIBAgQDBQUFBQUHAwUAAAECEQADBBIhMQVBUQYTImFxMoGRobEHQlLB0RQjYtLwFTNykvEWU1SCorLhF0OTJGODwuP/xAAbAQACAwEBAQAAAAAAAAAAAAACAwABBAUGB//EADMRAAICAQQBAwIFAwUBAAAAAAECABEDBBIhMVETQWEFIhRxgZGhMrHBIzPR8PFC/9oADAMBAAIRAxEAPwCW7N3AtyCYDAqSTAkgHc7c6tv7GxEqQfQzVOx3B33UkehH6077OcdXSHW3eG4b2W8j1HUHWvS5sY1A3I1H8pylb0jTDiGHG6E+8T9JqP8AYzz0HmK9Rw2It3VnLqN1O4qYYdfwj4CuWfqGReCJqGmU8gyk8L4ilwQ9yHXkQx06iBUmJ4tZQsDdJK8sjwfQ5Y+dWrHcLz+JCFfqADPnrv76o2P4IyOQbZ13K5oPppp6VWJcORrY1+f8AkjNlVeL/ACk44tZYAhjB/wAL/wAtQu4zZg3h/CVafXaK6t9n3OoBHqD+tFW+z9zmfkB+tP8Aw+Ec7v7iCObKf+IGeNjYI3qSAPlJoXH8Sa4qqAFA6TJnXX0p8nZhjux+Q/Sp07Kj8R+NUPwmM2OT+Yl7cpHNSoEGsCGr6nZa2NyT76Jt9n7I+5PqTRn6jjHQMoaVj3KXg+H3LphFPqdF+Jq18N7MIkF/3jdPu/Dn76fWsIqiFUAeQoi3hrh9lGPotYM2vfJwv2j+8cmBV57gFuyF0AAHQaVLiLQZSjCVYQR5Uf/Z9wblF9Wn6TUowQHtXU+Fco5QDd8zTt8VBuEY65g/CZv2eQ++PUbj3VaE7W4YrPe5f4Spmk+Kw9sggXZnoP1oVeH2h9zMf4jPy2o2bFk+5uD7xYV0+1RfzhfE+2LNMKyIeZ9r3Dl9ard3E51C5nIE8yJ11nf1plc4OG2Qr6afSsTgY5k/r7qcmo0+MULi2w5XPixFgsAZiWXyI/RqcJZtDdWc/xMSP+nQUWnBmHsqPf+utFWuC3DzA93/mkyfUEPk/3EsaR/aK7t0kZY0GyjYeg2FUztJ2MZmN3DkgnVrZ+ZQ/l8K9Rt9mz94sf61P50UvZ5Bymufn1mPJx/wCx2HA6d/8AjPKuA4zFWb0XbVw2yMrAg6dG18vzr0i1bUqCDIIkEdaNfs3aO6A14+vaa5h8Vet2mCr3jEKRIGs6eteY1/0jPqMhy6er+Dx+86KfUcW3ZlBsd1zH3dVy7wOy8kMG6jf371cMOwdFcDRlDe4ia1+wr0rGjNqMqNTX8RTpp3FkfylDt9lV5s3wA/WtP2eAEqGby0/KvQrfBV6E+8/pRVvgS/hitDfX85+4/wB4hdBpH4S/mf8AieTNw+4N0PwqbC8LvOfChA6t4R8+fwr2G5wK0NXA/X0qJ8DZGyE+v6Vf/zM5cXDj/kS10GjTlmJ/OeX2+zd3m6D4mprfZ9/94B/hQn6kV6UuGXlbsf4nJ+Qii7OAvt7FmP8Kk/UUq6pq8jcmvr/kNjGhw9D9T/ALnl44Ig1e6x9+UfU/WprPC7APhRnP8AhLfPSvUj2WxZ5IvrH8q0ew2IuCHvKvmFP6iujpsf4o0uTcfYc/2mfL9S0+IcAfn/AMmVy19nvDwPFhyx/wAVyfpR+B4bgMOf3eFsq34sgZvixJ+dWq32CP3r7nyCgD6mibf2f4Ye0Xb/ABfyr1mHRsFp3Yj5Jnk8+qR3LIgF+1Ssf7W3AIWAByA0+FL7/aYj7+byGu3kK9Ps9j8Iv/08/wCJmf6tR9jhtlPZtW19EUflXZwY9MvZJ/T/AJmB3yHqjPGG7Y4c/eI9bZorD8btXfYvKD0kKfg0V7YcFbO6If8ACv6VHd7O4Z98Pb/yL+lbd2m7BYfp/wAxY9Qe38TyW1Dffn3/AKUQtk/h+W9el3uwmEb7gX/CzD6GluI+zpPuXXHk0N9Mpqw2nPTH9v8Av3ljIR2P3lG/bLwUDMoA2kfzqP8Aa25P86t1zsFdHsuD/mX+YoDE9kb675f+ofzo/wAPHuv5/wBpe4e39v8AiV9eJt+P6/pXbcTb8f0/Ssx/AL6b2yf8MH6UtOHYHxAj1BFPGmwOOv7Re9l8mHtxJ+bfQUvxGJdtFYgczOp+VStbNc5KamoQ9CDe8DInX51wUIqYWK6GHpnqiL9MxYDWsk1OMNW/2Sj9YSfTF9KzXrRP7JXP7LTHzCfSER5a3BqL9m8q7t4FzsjH0BNGNQnkxXogdN6NnJPaJW4fdIO4gflFMW4Jc+85X/HcRfkCT8q4fh1pbirdeVgzlg9NN/d8qv1Fg2SD+UD8+IIzC1Ir9oZRK3FYQTFuHPloJ9T8qsXZ7sFZICd3be4oDMXdmiY1CgHmR0HnVvwt3D2VC2rlsAbQy/rU1jtFZQkgpmO7aSRy21puHX6LI+0uF+Tyf0iv9TkkBaPtxK3hexz2ohbQEzoHIknfURz5VJxHgne2jZuoCp5oChB5ETIkeoqzf7YqfZM+hn6CgL/ABN7jk2kMaT4Wj/OsOr1eBSaZnH8f7Tp6TE+4NlO0f5lCu4u7wuwcNinugHKq3VByrBgZpM7c6A/2xv7/ALRc/wCn/wCtXXifZkYm0yXgVDnNmUKG8J36bAb1Sr32VOJMX0gkgC5bKQOURqfcKy6V8Gqy7chofJ7hZ17xpYPsc/x7zvDdr8U5hTfcn/ySOulGpx7iH4H+EW/0NXz7Mexi4TDeG53pdlz5l2bKeccpmrl/ZS9NvqK6efD9LxuV3g/9+Jk0+TV5UDFSPzng+M4xiyYunKekEfRjXT8JxBt97LECYAdCemwCj516h9ovYQXEtvbA7ySAOpAzD/xVau8KfDjurtsqy8iNwdQQeYI50n1dHj5xJuPseD+jTauLOSRmG0e4B/hp5P7N8IRiFNs3SdtdS3+KI0pJ2o7N4ayS4uqhJ0Rg3d6ncFQT8q6s/aDi7UKkDQaoFBEfgzLAqfi3H8Ljbfd38O0gypuHkR0WTExPTas2PGW/6q3f+3A/bxOxq/qeNl2Ymqvi7/koi82sP/7l5/VLTEfN6C/Z8N/vH99mPpcqy4HtQMPZNhDbKDMI7pw7qSSC5nU6xMSIFVYXySQjZdNlEj5tXU2p12P1nG34fYn9P9yXD3LSXSLLtly5fEAurAyvQ6TvUT8VcffA9Ap/6lNdXsLcMZlB83OUf+DX50Ne4eNMzAf4VJ/7nn5VW3GOCRPQtYBoef8Akf3E6bjN78Q+CL+i1C/G73Jp/wAKR8dK5OHt81ZuksQPcoAHyrl7pEwFQfwgA/Hf51exD1c5jNm4JbD9Lv8A2Z0vG7/Iv/kH5CprfFca2ymP8JPzJpb+0sdpY+80RhuD4m5qEAH4mM/T9aAqo5NCLLj8/wDf3hv7bjm3e4P8ar9CD8q5ccQba7c+Ln9aKu8Bvotsp4y2YvqAFM6KNemvvrfDuzmJdyrsB1Ny4AB6BJY/Cl8Hkf2/5l2vsf1gVvC4hj48Tl/xXlH0zUXZ7OWd37zGJ/hS4/1y0cn2f3DrcvL/AIVJ+ZA+lOrfZPC27Y70F2k6s0aCJPhibeYqO7JxZ/j/AHJag+0qSYbh1o6L3jfxq7fRP1p/wjHWfuWLZ/wkL/zHWj72FwCKphAWzEJEyqkAneJkj3z0rOH2cNcJ/Z0VLiakFSeu+p8JjXnMaUnLp1YXIuZU6IjG0bj7WUHqwI+QIrnE4F3GbQdQJ18zO3uqewLn4S3nA/lU4W7+ED1M/QVyW0eUmtvE3jUqPYla4r2OtX8wUlboAY/wnr5b0t4B2ee1eZHUF8qsp+6ZzGCT6a+la4r2hxFnEOcpJuFlEGdA3hQA7wNMx6mKZcB7VsLk3kLHJ3ZlSrarAJOm5U6afvNYrE6v9N6zQMRH7R7bGG0c/5mYnCjL3kAFSAREcwNdPUVi4O7p4MueQpJHiOnI670EeKXXu3bKMqi41w25UgqV0Azq+hH8J9aEwPE8ZaxBw2JbM4SURlWCoMZ1K6OZnTQ6bCZryuLI2NqHmNwKhejLrwjswqjL4XJGbOQdR/g5DlM/KgOL8Js2wXu3QOUd35f8AuSfWluM7T3dVL+An2YhTEwY5yDqDsRrVZ7S8Z7y0sEg5tYkaAHTQ+h99dDAH1L7SQD+U6G4aY7wOef8AeZ6H2Z4haDiyFdARmV7jDNcYgMCVX2Rl2mdOXnYcSpMlI2n1ryLhGOZWt3lYlraI0EmC8Sw0IIB0Hx5V69wbGi9ZS5p41B06xlYD0YEe6nZ8DYcg3Hr+89FpNYNVj3oKo/8AI7ipXsTfNp7a3GEkEqGYKR6DSlGH4jftmFuOB0mR8DIoxcVCufMxU2wGCTlhTp12P6VX+J8SKkAaGZHqI/Wtj4teMZjT9JzmyYmT7xf6RXfxt56f43b4mue4oj9iNc/shr6JpXx1PoQBuMjGHrP2ajf2aj/SQ6iN9zWv2Wjv2Q1BcRAAxYBMC/ZvKt/sxpr+ymt/slZzqJfpwD9nrn9kqwf2V6j6Vr+wx1+QoPxAvmD6c/9n//Z" alt="Minecraft персонаж">
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Розвиток</h3>
+                    <p>У 2014 році Microsoft придбала Mojang за $2.5 мільярди. Гра доступна на всіх сучасних платформах та має мільйони активних гравців.</p>
+                </div>
+                
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Спільнота</h3>
+                    <p>Одна з найактивніших ігрових спільнот з тисячами модів, текстур паків та серверів по всьому світу.</p>
                 </div>
             </div>
-        </section>
+            
+            <div class="about-content">
+                <p><strong>Minecraft</strong> (від англ. mine - "шахта; добувати" + craft - "ремесло; створювати") - комп'ютерна інді-гра в жанрі пісочниці, створена шведським програмістом Маркусом Перссоном і випущена його студією Mojang AB.</p>
+                <p>У наступні роки Minecraft була портована на мобільні пристрої під керуванням Android, iOS та Windows Phone; на ігрові приставки PlayStation, Xbox, Nintendo та інші платформи.</p>
+            </div>
+        </div>
+    </section>
 
-        <section id="версії" class="versions-section">
-            <div class="content-box">
-                <h2>Версії Minecraft</h2>
-                <div class="table-container">
-                    <table class="versions-table">
-                        <thead>
-                            <tr>
-                                <th>Версія</th>
-                                <th>Випуск</th>
-                                <th>Оновлення</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr><td>1.0</td><td>18 листопада 2011р.</td><td>---------------</td></tr>
-                            <tr><td>1.1</td><td>12 січня 2012р.</td><td>---------------</td></tr>
-                            <tr><td>1.2</td><td>1 березня 2012р.</td><td>---------------</td></tr>
-                            <tr><td>1.3</td><td>1 серпня 2012р.</td><td>---------------</td></tr>
-                            <tr><td>1.4</td><td>25 жовтня 2012р.</td><td>Pretty Scary Update</td></tr>
-                            <tr><td>1.5</td><td>13 березня 2013р.</td><td>Redstone Update</td></tr>
-                            <tr><td>1.6</td><td>1 липня 2013р.</td><td>Horse Update</td></tr>
-                            <tr><td>1.7</td><td>25 жовтня 2013р.</td><td>The Update that Changed the World</td></tr>
-                            <tr><td>1.8</td><td>2 вересня 2014р.</td><td>Bountiful Update</td></tr>
-                            <tr><td>1.9</td><td>29 лютого 2016р.</td><td>Combat Update</td></tr>
-                            <tr><td>1.10</td><td>8 червня 2016р.</td><td>Frostburn Update</td></tr>
-                            <tr><td>1.11</td><td>14 листопада 2016р.</td><td>Exploration Update</td></tr>
-                            <tr><td>1.12</td><td>7 червня 2017р.</td><td>World of Color Update</td></tr>
-                            <tr><td>1.13</td><td>18 липня 2018р.</td><td>Update Aquatic</td></tr>
-                            <tr><td>1.14</td><td>23 квітня 2019р.</td><td>Village and Pillage</td></tr>
-                            <tr><td>1.15</td><td>10 грудня 2019р.</td><td>Buzzy Bees</td></tr>
-                            <tr><td>1.16</td><td>23 червня 2020р.</td><td>Nether Update</td></tr>
-                            <tr><td>1.17</td><td>8 червня 2021р.</td><td>Caves & Cliffs (частина 1)</td></tr>
-                            <tr><td>1.18</td><td>30 листопада 2021р.</td><td>Caves & Cliffs (частина 2)</td></tr>
-                            <tr><td>1.19</td><td>7 червня 2022р.</td><td>The Wild Update</td></tr>
-                            <tr><td>1.20</td><td>7 червня 2023р.</td><td>Trails & Tales</td></tr>
-                        </tbody>
-                    </table>
+    <!-- Versions Section -->
+    <section id="versions" class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Версії Minecraft</h2>
+                <p class="section-subtitle">Хронологія оновлень з 2011 року</p>
+            </div>
+            
+            <div class="versions-filter">
+                <button class="filter-btn active" data-filter="all">Всі версії</button>
+                <button class="filter-btn" data-filter="major">Мажорні оновлення</button>
+                <button class="filter-btn" data-filter="recent">Останні 5 років</button>
+            </div>
+            
+            <div class="versions-timeline">
+                <div class="timeline-item" data-category="major">
+                    <div class="timeline-date">2011</div>
+                    <div class="timeline-content">
+                        <h4>Minecraft 1.0</h4>
+                        <p>Перший офіційний реліз</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-category="major">
+                    <div class="timeline-date">2013</div>
+                    <div class="timeline-content">
+                        <h4>Redstone Update</h4>
+                        <p>Версія 1.5 - оновлення редстоуну</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-category="major">
+                    <div class="timeline-date">2014</div>
+                    <div class="timeline-content">
+                        <h4>Microsoft Acquisition</h4>
+                        <p>Купівля Minecraft компанією Microsoft</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-category="major">
+                    <div class="timeline-date">2018</div>
+                    <div class="timeline-content">
+                        <h4>Update Aquatic</h4>
+                        <p>Версія 1.13 - оновлення океанів</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-category="recent">
+                    <div class="timeline-date">2019</div>
+                    <div class="timeline-content">
+                        <h4>Village & Pillage</h4>
+                        <p>Версія 1.14 - оновлення сіл та піратів</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-category="recent">
+                    <div class="timeline-date">2020</div>
+                    <div class="timeline-content">
+                        <h4>Nether Update</h4>
+                        <p>Версія 1.16 - оновлення Незеру</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-category="recent">
+                    <div class="timeline-date">2021</div>
+                    <div class="timeline-content">
+                        <h4>Caves & Cliffs</h4>
+                        <p>Версії 1.17-1.18 - оновлення печер та скель</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-category="recent">
+                    <div class="timeline-date">2022</div>
+                    <div class="timeline-content">
+                        <h4>The Wild Update</h4>
+                        <p>Версія 1.19 - оновлення дикої природи</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-category="recent">
+                    <div class="timeline-date">2023</div>
+                    <div class="timeline-content">
+                        <h4>Trails & Tales</h4>
+                        <p>Версія 1.20 - оновлення стежок та історій</p>
+                    </div>
                 </div>
             </div>
-        </section>
-    </main>
+            
+            <div class="table-container">
+                <table class="versions-table">
+                    <thead>
+                        <tr>
+                            <th><i class="fas fa-code-branch"></i> Версія</th>
+                            <th><i class="fas fa-calendar-alt"></i> Дата випуску</th>
+                            <th><i class="fas fa-star"></i> Назва оновлення</th>
+                            <th><i class="fas fa-gamepad"></i> Платформа</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="version-badge">1.0</span></td>
+                            <td>18.11.2011</td>
+                            <td>Перший реліз</td>
+                            <td>Java Edition</td>
+                        </tr>
+                        <tr>
+                            <td><span class="version-badge">1.14</span></td>
+                            <td>23.04.2019</td>
+                            <td>Village & Pillage</td>
+                            <td>Крос-платформна</td>
+                        </tr>
+                        <tr>
+                            <td><span class="version-badge">1.16</span></td>
+                            <td>23.06.2020</td>
+                            <td>Nether Update</td>
+                            <td>Крос-платформна</td>
+                        </tr>
+                        <tr>
+                            <td><span class="version-badge">1.19</span></td>
+                            <td>07.06.2022</td>
+                            <td>The Wild Update</td>
+                            <td>Крос-платформна</td>
+                        </tr>
+                        <tr>
+                            <td><span class="version-badge">1.20</span></td>
+                            <td>07.06.2023</td>
+                            <td>Trails & Tales</td>
+                            <td>Крос-платформна</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
 
-    <footer id="контакти">
-        <div class="footer-content">
-            <p>Зв'язатися з нами: +380657786583</p>
-            <div class="footer-links">
-                <a href="https://www.minecraft.net/ru-ru" target="_blank" class="footer-link">Офіційний сайт Minecraft</a>
-                <a href="https://ru.wikipedia.org/wiki/Minecraft" target="_blank" class="footer-link">Ще більше інформації про Minecraft</a>
+    <!-- Gallery Section -->
+    <section id="gallery" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Галерея</h2>
+                <p class="section-subtitle">Кращі моменти зі світу Minecraft</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Minecraft замок">
+                    <div class="gallery-overlay">
+                        <h3>Величні замки</h3>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1601042879364-f3947d1f9fc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Minecraft пейзаж">
+                    <div class="gallery-overlay">
+                        <h3>Живописні пейзажі</h3>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1531315630201-bb15abeb1653?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Minecraft механізми">
+                    <div class="gallery-overlay">
+                        <h3>Складні механізми</h3>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Minecraft мультиплеєр">
+                    <div class="gallery-overlay">
+                        <h3>Мультиплеєрні сервери</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3><i class="fas fa-cube"></i> MinecraftUA</h3>
+                    <p>Українська спільнота гравців Minecraft. Ділимося новинами, порадами та створюємо разом.</p>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-phone"></i> +380 65 778 65 83</p>
+                        <p><i class="fas fa-envelope"></i> info@minecraftua.com</p>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Корисні посилання</h4>
+                    <div class="link-grid">
+                        <a href="https://www.minecraft.net" target="_blank" class="footer-link">
+                            <i class="fas fa-external-link-alt"></i> Офіційний сайт
+                        </a>
+                        <a href="https://ru.wikipedia.org/wiki/Minecraft" target="_blank" class="footer-link">
+                            <i class="fas fa-book"></i> Вікіпедія
+                        </a>
+                        <a href="https://www.curseforge.com/minecraft" target="_blank" class="footer-link">
+                            <i class="fas fa-download"></i> Моди та ресурс паки
+                        </a>
+                        <a href="https://www.reddit.com/r/Minecraft" target="_blank" class="footer-link">
+                            <i class="fab fa-reddit"></i> Спільнота Reddit
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h4>Підпишіться на оновлення</h4>
+                    <p>Отримуйте новини про оновлення та цікаві матеріали</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Ваш email" class="newsletter-input">
+                        <button class="newsletter-btn">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 MinecraftUA. Всі права захищені. Minecraft є торговою маркою Mojang Studios.</p>
+                <div class="footer-social">
+                    <a href="#" class="social-icon"><i class="fab fa-discord"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-telegram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                </div>
             </div>
         </div>
     </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="index.js"></script>
 </body>
 </html>
